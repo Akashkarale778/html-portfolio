@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash's Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b0684a23d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/final-logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Akash</span><br>karale from Pune, Maharashtra</h1>
+        </div>
+    </div>
+ </div>
+
+ <!----------------------about--------------------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user2.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>An aspiring computer student seeking a
+                    placement into a well known firm. I possess
+                    technological expertise, communication skills and
+                    an ability to perform well in a team.I'm a passionate and dedicated web 
+                    developer with a strong foundation in front-end and back-end technologies. 
+                    I am enthusiastic about staying up-to-date with the latest web technologies 
+                    and design trends.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Languages</p>
+                        <p class="tab-links" onclick="opentab('education')">Education/Certifications</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, HTML & CSS, C#, C++, JavaScript</li>
+                            <li><span>Frameworks</span><br>Bootstrap, Springboot, Nodejs</li>
+                            <li><span>DataBase</span><br>Mysql, MongoDB</li>
+                            <li><span>API</span><br>Postman, REST</li>
+                            <!--can add more aftwerwards -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span id="e">Marathi</span></li>
+                            <li><span id="e">English</span></li>
+                            <li><span id="e">Hindi</span></li>
+                            <li><span id="e">German</span></li>
+                            <!--can add more aftwerwards -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education</span><br>Btech degree : Vishwakarma Institute of Information Technology, Pune (cgpa : 8.43)</li>
+                            <li><span>Certification</span><br>SpringBoot     <a href="Images/Springboot_certificate_pdf.pdf" class="d-btn">View Certificate</a> </li> 
+                            <li><span>Certification</span><br>Java/Adv Java  <a href="Images/java_adv_java_certificate.pdf" class="d-btn">View Certificate</a></li>
+                            <!--can add more aftwerwards -->
+                        </ul>
+                    </div>      
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------Services------------ -->
+
+<div id="services">
+
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <!-- <p>i love to do web designs</p> -->
+                <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Software Development</h2>
+                <!-- <p>i love to do web designs</p> -->
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <!-- <p>i love to do web designs</p> -->
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- -----------------------------portfolio------------------------------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <h2 class="pro-h">NFT-Marketplace</h2>
+                <img src="Images/NFT_pro_1.png">
+                <div class="layer">
+                    <h3 class="cut-layerR">NFT Market place</h3>
+                    <p>This is a website where you can surf thru various NFTs and post your unique ones too  (link might be bugged due to compatibility of jsp file)</p>
+                    <a href="http://akashprojects.rf.gd/NFTm/src/main/webapp/home.jsp"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h2 class="pro-h">Super-capsule parkour game</h2>
+                <img src="Images/Game_pro_2.png">
+                <div class="layer">
+                    <h3 class="cut-layerR">Parkour jumpmaster</h3>
+                    <p>This is a retro style game where you jump through various stages and kill eneimes and collect points witha  retro gameboy UI</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h2 class="pro-h">Responsive GameStore Website </h2>
+                <img src="Images/Home2.1.png">
+                <div class="layer">
+                    <h3 class="cut-layerR">Responsive GameStore Website</h3>
+                    <p>Created a responsive game store website with HTML, CSS,
+                        and JavaScript. Ensured seamless user experience across
+                        devices. Designed visually appealing interface, enhancing
+                        customer engagement and accessibility</p>
+                    <a href="http://akashprojects.rf.gd/GameStore/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+</div>
+
+<!-- ------------------------contact---------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>akashkarale778@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8830227360</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_.akash1522_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/akash-karale-632209231"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/+918830227360"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <a href="Images/My_CV2.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/b76ff491f1257a3b1cd9c171a57d22d6" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="Phone" id="phone" placeholder="Phone number(optional)">
+                    <textarea name="Message" rows="6" placeholder="Your Messeage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <!-- <span id="msg">hello</span> -->
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Akash. made with love by Akash Karale</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
